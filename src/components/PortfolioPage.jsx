@@ -197,7 +197,7 @@ const PortfolioPage = () => {
                 <div className="col-span-2 font-sans max-sm:mt-8 ">
 
                     {/* my projects */}
-                    <div className="projects-wrapper mt-8 lg:mt-0 shadow-xl  bg-slate-300 dark:bg-[#333a42] px-4 md:px-10 py-8 rounded-2xl">
+                    <div className="projects-wrapper mt-8 lg:mt-0 shadow-xl  bg-white dark:bg-[#333a42] px-4 md:px-10 py-8 rounded-2xl">
                         <div className="flex text-2xl font-bold opacity-55 mb-8 pl-8">
                             My Projects
                         </div>
@@ -248,7 +248,7 @@ const PortfolioPage = () => {
                     </div>
 
                     {/* github projects */}
-                    <div className="projects-wrapper mt-8 shadow-xl bg-slate-300 dark:bg-[#333a42] px-4 md:px-10 py-8 rounded-2xl">
+                    <div className="projects-wrapper mt-8 shadow-xl bg-white dark:bg-[#333a42] px-4 md:px-10 py-8 rounded-2xl">
                         <div className="flex text-2xl font-bold opacity-55 mb-8 pl-8">
                             My Github Projects
                         </div>
