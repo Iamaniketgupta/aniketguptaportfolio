@@ -32,7 +32,7 @@ const PortfolioPage = () => {
 
     return (
         <div className=" min-h-[100vh] bg-slate-200 text-black dark:bg-[#1d232a] duration-500 dark:text-white py-5 p-5 font-sans">
-            <div className="main-wrapper grid grid-cols-1 lg:grid-cols-3 md:gap-5 ">
+            <div className="main-wrapper grid grid-cols-1  place-items-start md:grid-cols-2 lg:grid-cols-3 md:gap-5 ">
                 <div className="personal-details grid grid-cols-1 gap-4 ">
                     {/* Theme */}
                     <div className="bg-white  dark:bg-[#333a42] shadow-lg rounded-lg  pl-6 pr-2 py-4">
@@ -162,7 +162,7 @@ const PortfolioPage = () => {
 
                     {/* Achievments */}
 
-                    <div className="bg-white dark:bg-[#333a42] shadow-lg rounded-lg py-8 px-4">
+                    <div className="bg-white dark:bg-[#333a42]  shadow-lg rounded-lg py-8 px-4">
                         <h2 className="text-xl px-4 font-semibold  opacity-80">Achievments</h2>
                         <div className="mt-3 mx-auto py-3 px-2">
 
@@ -194,14 +194,14 @@ const PortfolioPage = () => {
 
                 </div>
 
-                <div className="col-span-2 font-sans max-sm:mt-8 ">
+                <div className="col-span-2 font-sans  max-sm:mt-8 ">
 
                     {/* my projects */}
-                    <div className="projects-wrapper mt-8 lg:mt-0 shadow-xl  bg-white dark:bg-[#333a42] px-4 md:px-10 py-8 rounded-2xl">
+                    <div className="projects-wrapper mt-8 md:mt-0 lg:mt-0 shadow-xl   bg-white dark:bg-[#333a42] px-4 md:px-10 py-8 rounded-2xl">
                         <div className="flex text-2xl font-bold opacity-55 mb-8 pl-8">
                             My Projects
                         </div>
-                        <div className="projects grid grid-cols-1 md:grid-cols-2 gap-7 ">
+                        <div className="projects grid grid-cols-1 lg:grid-cols-2 gap-7 ">
                             {
                                 myProjects?.map((item, index) =>
                                     <div className="p-4 rounded-xl bg-slate-100 dark:bg-[#2a2e34] shadow-xl  hover:shadow-2xl cursor-pointer" key={index}>
@@ -219,7 +219,7 @@ const PortfolioPage = () => {
                                                         )
                                                     }
                                                 </ul>
-                                                <div className=" mt-3">
+                                                <div className=" mt-3 pl-1">
                                                     <h4 className="pl-2 font-semibold">Tech Stack</h4>
                                                     <div className="flex gap-2 ">
                                                         {
@@ -253,7 +253,7 @@ const PortfolioPage = () => {
                             My Github Projects
                         </div>
 
-                        <div className="github-projects grid grid-cols-1 md:grid-cols-2 gap-7">
+                        <div className="github-projects grid grid-cols-1 lg:grid-cols-2 gap-7">
                             {
                                 myGithubProjects.map((item, index) =>
                                     <div key={index} className="py-4 px-6 rounded-xl bg-slate-100 dark:bg-[#2a2e34] shadow-xl  hover:shadow-2xl cursor-pointer">
@@ -292,7 +292,7 @@ const PortfolioPage = () => {
 
 
                 {/* Footer */}
-                <div className="bg-white dark:bg-[#333a42] shadow-lg rounded-lg py-8 mt-5 px-4 md:col-span-3">
+                <div className="bg-white dark:bg-[#333a42] shadow-lg rounded-lg py-8 mt-5 px-4 md:col-span-3 mx-auto w-full">
                     <div className="text-center text-lg font-semibold opacity-90">
                         Made with <span className="text-red-500">&hearts;</span> by Aniket Gupta
                     </div>
