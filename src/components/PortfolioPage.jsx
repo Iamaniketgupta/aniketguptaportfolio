@@ -16,19 +16,19 @@ const PortfolioPage = () => {
         localStorage.getItem("mode") ? JSON.parse(localStorage.getItem("mode")) :
             false);
 
-  
-            useEffect(() => {
-                if (mode) {
-                    document.documentElement.classList.add('dark');
-                } else {
-                    document.documentElement.classList.remove('dark');
-                }
-                localStorage.setItem("mode", JSON.stringify(mode));
-            }, [mode]);
-        
-            const modeChange = () => {
-                setMode(prevMode => !prevMode);
-            };
+
+    useEffect(() => {
+        if (mode) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+        localStorage.setItem("mode", JSON.stringify(mode));
+    }, [mode]);
+
+    const modeChange = () => {
+        setMode(prevMode => !prevMode);
+    };
 
     return (
         <div className=" min-h-[100vh] bg-slate-200 text-black dark:bg-[#1d232a] duration-500 dark:text-white py-5 p-5 font-sans">
@@ -197,22 +197,26 @@ const PortfolioPage = () => {
                 <div className="col-span-2 font-sans  max-sm:mt-8 ">
 
                     {/* my projects */}
-                    <div className="projects-wrapper mt-8 md:mt-0 lg:mt-0 shadow-xl   bg-white dark:bg-[#333a42] px-4 md:px-10 py-8 rounded-2xl">
-                        <div className="flex text-2xl font-bold opacity-55 mb-8 pl-8">
+                    <div className="projects-wrapper mt-8 md:mt-0 lg:mt-0 shadow-xl bg-white dark:bg-[#333a42] px-4 md:px-10 py-8 rounded-2xl">
+                        <div className="flex text-2xl font-bold opacity-70 mb-8 justify-center ">
                             My Projects
                         </div>
                         <div className="projects grid grid-cols-1 lg:grid-cols-2 gap-7 ">
+                            
+
+
                             {
                                 myProjects?.map((item, index) =>
-                                    <div className="p-4 rounded-xl bg-slate-100 dark:bg-[#2a2e34] shadow-xl  hover:shadow-2xl cursor-pointer" key={index}>
-                                        <div>
-                                            <h3 className="text-center text-xl my-2 font-semibold opacity-65">{item.title}</h3>
-                                            <div className="overflow-clip mx-auto md:w-[70%] max-w-[320px] h-40 rounded-xl relative">
-                                                <img src={item.img} alt="" className="absolute inset-0 w-full h-full object-fill" />
-                                            </div>
+                                    <div className="p-4 rounded-xl bg-gray-100 dark:bg-[#2a2e34] border-2 border-offset-2 border-blue-500 shadow-xl font-semibold  hover:shadow-2xl cursor-pointer" key={index}>
 
+                                        <div className="border-3 overflow-clip bg-contain h-[200px] md:h-[260px] w-full rounded-xl ">
+                                            <img src={item.img} alt={item.title} className=" w-full h-full p-2 object-fill border-4 border-offset-2 border-blue-100 rounded-xl" />
+                                        </div>
+                                        <div>
                                             <div className="p-2 my-2 opacity-60 text-sm">
-                                                <ul className="min-h-12">
+                                                <h3 className="text-center text-xl my-2 font-bold ">{item.title}</h3>
+
+                                                <ul className="min-h-12 pl-4" style={{ listStyleType: "disc" }}>
                                                     {
                                                         item?.desc?.map((item, idx) =>
                                                             <li className="px-3 my-1" key={idx}>{item}</li>
@@ -224,7 +228,7 @@ const PortfolioPage = () => {
                                                     <div className="flex gap-2 ">
                                                         {
                                                             item?.techStack?.map((item, idx) =>
-                                                                <div key={idx} className="cursor-pointer shadow-lg  inline-block m-1 px-3 py-1 bg-slate-500 rounded-2xl text-xs text-white font-semibold">
+                                                                <div key={idx} className="cursor-pointer shadow-lg  inline-block m-1 px-3 py-1 bg-slate-700 rounded-2xl text-xs text-white font-semibold">
                                                                     {item}
                                                                 </div>
                                                             )
@@ -258,27 +262,27 @@ const PortfolioPage = () => {
                                 myGithubProjects.map((item, index) =>
                                     <div key={index} className="py-4 px-6 rounded-xl bg-slate-100 dark:bg-[#2a2e34] shadow-xl  hover:shadow-2xl cursor-pointer">
                                         <a href={item.github_link} target="_blank"><h3 className="text-lg font-semibold opacity-70">{item.title} <TbBrandGithub className="inline-block mx-2" size={20} /></h3>
-                                        <div className="text-sm min-h-14 py-2 opacity-60">
-                                            <p>⚡{item.desc}</p>
-                                        </div>
-                                        <div className="flex gap-2">
-                                            <div className="flex-grow">
-                                                <div className="stars mr-3 inline-flex gap-1 items-center">
-                                                    <FaRegStar className="inline-block" />
-                                                    {item.stars}
-                                                </div>
-                                                <div className="forks ml-3 inline-flex gap-1 items-center">
-                                                    <LuGitFork />
-                                                    {item.forks}
-                                                </div>
+                                            <div className="text-sm min-h-14 py-2 opacity-60">
+                                                <p>⚡{item.desc}</p>
                                             </div>
+                                            <div className="flex gap-2">
+                                                <div className="flex-grow">
+                                                    <div className="stars mr-3 inline-flex gap-1 items-center">
+                                                        <FaRegStar className="inline-block" />
+                                                        {item.stars}
+                                                    </div>
+                                                    <div className="forks ml-3 inline-flex gap-1 items-center">
+                                                        <LuGitFork />
+                                                        {item.forks}
+                                                    </div>
+                                                </div>
 
-                                            <div className="lang-used">
-                                                <div className={`inline-block w-3 h-3 rounded-full mx-2 ${item.language === "JavaScript" ? "bg-yellow-300" : item.language === "HTML" ? "bg-red-400" : item.language === "EJS" ? "bg-pink-400" : "bg-slate-500"}`}>
+                                                <div className="lang-used">
+                                                    <div className={`inline-block w-3 h-3 rounded-full mx-2 ${item.language === "JavaScript" ? "bg-yellow-300" : item.language === "HTML" ? "bg-red-400" : item.language === "EJS" ? "bg-pink-400" : "bg-slate-500"}`}>
+                                                    </div>
+                                                    <span>{item.language}</span>
                                                 </div>
-                                                <span>{item.language}</span>
                                             </div>
-                                        </div>
                                         </a>
                                     </div>
                                 )

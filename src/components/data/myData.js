@@ -57,24 +57,24 @@ const myProjects = [
         live_link: "#",
         github_link: "#"
     },
-    {
-        title: "Project-3",
-        img: project,
-        desc: ["My personal Project-3 with clean code and design",
-            "Implemented user and device friendly layout"],
-        techStack: ["React.js", "Tailwind"],
-        live_link: "#",
-        github_link: "#"
-    },
-    {
-        title: "Project-4",
-        img: project,
-        desc: ["My personal Project-4 with clean code and design",
-            "Implemented user and device friendly layout"],
-        techStack: ["React.js", "Tailwind"],
-        live_link: "#",
-        github_link: "#"
-    },
+    // {
+    //     title: "Project-3",
+    //     img: project,
+    //     desc: ["My personal Project-3 with clean code and design",
+    //         "Implemented user and device friendly layout"],
+    //     techStack: ["React.js", "Tailwind"],
+    //     live_link: "#",
+    //     github_link: "#"
+    // },
+    // {
+    //     title: "Project-4",
+    //     img: project,
+    //     desc: ["My personal Project-4 with clean code and design",
+    //         "Implemented user and device friendly layout"],
+    //     techStack: ["React.js", "Tailwind"],
+    //     live_link: "#",
+    //     github_link: "#"
+    // },
 
 ]
 
