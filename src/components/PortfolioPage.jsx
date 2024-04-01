@@ -32,7 +32,7 @@ const PortfolioPage = () => {
 
     return (
         <div className=" min-h-[100vh] bg-slate-200 text-black dark:bg-[#1d232a] duration-500 dark:text-white py-5 p-5 font-sans">
-            <div className="main-wrapper grid grid-cols-1  place-items-start md:grid-cols-2 lg:grid-cols-3 md:gap-5 ">
+            <div className="main-wrapper grid grid-cols-1  place-items-start md:grid-cols-2 lg:grid-cols-3 md:gap-5 max-md:place-items-center ">
                 <div className="personal-details grid grid-cols-1 gap-4 ">
                     {/* Theme */}
                     <div className="bg-white  dark:bg-[#333a42] shadow-lg rounded-lg  pl-6 pr-2 py-4">
@@ -136,21 +136,21 @@ const PortfolioPage = () => {
 
                             <ol className=" border-l-2 pl-3 relative">
                                 <div className="w-2 h-2 rounded-full absolute bg-slate-500 left-[-5px] opacity-50"></div>
-                                <li className="text-sm  mb-2 font-medium">
+                                <li className="text-sm  mb-4 font-medium">
                                     <div className="text-xs opacity-70">2022-Present</div>
                                     <div className="opacity-80">B.Tech Computer Science</div>
                                     <div className="opacity-85">PCTE Institute of Engineering and Technology</div>
 
                                 </li>
                                 <div className="w-2 h-2 rounded-full absolute bg-slate-500 left-[-5px] opacity-50"></div>
-                                <li className="text-sm font-medium mb-2">
+                                <li className="text-sm font-medium mb-4">
                                     <div className="text-xs opacity-70">2019-2021 </div>
                                     <div className="opacity-80">12<sup>th</sup></div>
                                     <div className="opacity-85">SDP Sen Sec School</div>
 
                                 </li>
                                 <div className="w-2 h-2 rounded-full absolute bg-slate-500 left-[-5px] opacity-50"></div>
-                                <li className="text-sm  mb-2 font-medium">
+                                <li className="text-sm  mb-3 font-medium">
                                     <div className="text-xs opacity-70">2018-2019</div>
                                     <div className="opacity-80">10<sup>th</sup></div>
                                     <div className="opacity-85">Bharat Sewak Adarsh Vidiyalya</div>
@@ -168,21 +168,21 @@ const PortfolioPage = () => {
 
                             <ol className=" border-l-2 pl-3 relative">
                                 <div className="w-2 h-2 rounded-full absolute bg-slate-500 left-[-5px] opacity-50"></div>
-                                <li className="text-sm  mb-2 font-medium">
+                                <li className="text-sm  mb-4 font-medium">
                                     <div className="text-xs opacity-70">2024</div>
                                     <div className="opacity-80">First Runners Up</div>
                                     <div className="opacity-85">At Upkill Mafia Hackathon in MERN</div>
 
                                 </li>
                                 <div className="w-2 h-2 rounded-full absolute bg-slate-500 left-[-5px] opacity-50"></div>
-                                <li className="text-sm font-medium mb-2">
+                                <li className="text-sm font-medium mb-4">
                                     <div className="text-xs opacity-70">2024 </div>
                                     <div className="opacity-80">Among the Top 2 </div>
                                     <div className="opacity-85">At Inter College Coding Competition in Arya College</div>
 
                                 </li>
                                 <div className="w-2 h-2 rounded-full absolute bg-slate-500 left-[-5px] opacity-50"></div>
-                                <li className="text-sm  mb-2 font-medium">
+                                <li className="text-sm  mb-3 font-medium">
                                     <div className="text-xs opacity-70">2023</div>
                                     <div className="opacity-80">Best Student Awardee</div>
                                     <div className="opacity-85">By Indian School for Technical Education</div>
@@ -201,7 +201,7 @@ const PortfolioPage = () => {
                         <div className="flex text-2xl font-bold opacity-70 mb-8 justify-center ">
                             My Projects
                         </div>
-                        <div className="projects grid grid-cols-1 lg:grid-cols-2 gap-7 ">
+                        <div className="projects grid grid-cols-1 lg:grid-cols-2 gap-7 max-md:place-items-center ">
                             
 
 
