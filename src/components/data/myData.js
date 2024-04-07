@@ -1,6 +1,7 @@
 import project from "../../assets/image.png"
 import profilize from "../../assets/profilize.png";
-import portfolioProject from "../../assets/portfolioProject.png";
+// import portfolioProject from "../../assets/portfolioProject.png";
+import mentorhub from "../../assets/mentorhubimage.png";
 
 const personalDetails = [
     {
@@ -50,12 +51,11 @@ const myProjects = [
     },
     {
         title: "Aniket Gupta Portfolio",
-        img: portfolioProject || project,
-        desc: ["My personal portfolio with clean code and design",
-            "Implemented user and device friendly layout"],
-        techStack: ["React.js", "Tailwind"],
-        live_link: "#",
-        github_link: "#"
+        img: mentorhub || project,
+        desc: ["A Platform to connect Mentees and Mentors for 1:1 mentorship. Made during a hackathon"],
+        techStack: ["React.js", "Tailwind","NodeJs","Express"],
+        live_link: "https://mentorhub.vercel.app",
+        github_link: "https://github.com/Iamaniketgupta/mentorhub"
     },
     // {
     //     title: "Project-3",
@@ -103,6 +103,15 @@ const myGithubProjects =[
         language:"EJS",
         github_link: "https://github.com/iamaniketgupta/RealWeatherApp",
         stars:"3",
+        forks:"0"
+
+    },
+    {
+        title: "Aniket Gupta Portfolio",
+        desc: ["My personal portfolio Centered around the theme of GitHub and its applications."],
+        language:"JavaScript",
+        github_link: "https://github.com/Iamaniketgupta/aniketguptaportfolio",
+        stars:"1",
         forks:"0"
 
     },

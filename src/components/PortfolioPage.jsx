@@ -68,7 +68,9 @@ const PortfolioPage = () => {
                                 ⚡ MERN Full Stack Developer | ML Enthusiast | JavaScript | Node.js | React ⚡
                             </div>
 
-                            <a href="#"><button className="p-2 px-3 border-2 border-offset-1 rounded-xl mt-5 hover:shadow-xl text-sm font-medium inline-flex items-center">Download Resume
+                            <a href="https://drive.google.com/file/d/1XTVrkBRZ2pP2YEvVQwRAG3GZ2-RQdPg2/view"
+                        target="_blank">
+                            <button className="p-2 px-3 border-2 border-offset-1 rounded-xl mt-5 hover:shadow-xl text-sm font-medium inline-flex items-center">Download Resume
                                 <IoDownloadOutline className="inline-block mx-1 text-blue-600" />
 
                             </button></a>
