@@ -52,7 +52,7 @@ const myProjects = [
     {
         title: "Aniket Gupta Portfolio",
         img: mentorhub || project,
-        desc: ["A Platform to connect Mentees and Mentors for 1:1 mentorship. Made during a hackathon"],
+        desc: ["A Platform to connect Mentees and Mentors for 1:1 mentorship", "Made during a hackathon"],
         techStack: ["React.js", "Tailwind","NodeJs","Express"],
         live_link: "https://mentorhub.vercel.app",
         github_link: "https://github.com/Iamaniketgupta/mentorhub"
@@ -108,7 +108,7 @@ const myGithubProjects =[
     },
     {
         title: "Aniket Gupta Portfolio",
-        desc: ["My personal portfolio Centered around the theme of GitHub and its applications."],
+        desc: ["Personal portfolio Centered around the theme of GitHub and its applications."],
         language:"JavaScript",
         github_link: "https://github.com/Iamaniketgupta/aniketguptaportfolio",
         stars:"1",

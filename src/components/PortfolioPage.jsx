@@ -70,7 +70,7 @@ const PortfolioPage = () => {
 
                             <a href="https://drive.google.com/file/d/1XTVrkBRZ2pP2YEvVQwRAG3GZ2-RQdPg2/view"
                         target="_blank">
-                            <button className="p-2 px-3 border-2 border-offset-1 rounded-xl mt-5 hover:shadow-xl text-sm font-medium inline-flex items-center">Download Resume
+                            <button className="p-2 px-3 border-2 border-offset-1 border-blue-500 rounded-xl mt-5 hover:shadow-xl text-sm font-medium inline-flex items-center">Download Resume
                                 <IoDownloadOutline className="inline-block mx-1 text-blue-600" />
 
                             </button></a>
@@ -225,9 +225,9 @@ const PortfolioPage = () => {
                                                         )
                                                     }
                                                 </ul>
-                                                <div className=" mt-3 pl-1">
+                                                <div className=" mt-3 pl-1 ">
                                                     <h4 className="pl-2 font-semibold">Tech Stack</h4>
-                                                    <div className="flex gap-2 ">
+                                                    <div className="flex flex-wrap ">
                                                         {
                                                             item?.techStack?.map((item, idx) =>
                                                                 <div key={idx} className="cursor-pointer shadow-lg  inline-block m-1 px-3 py-1 bg-slate-700 rounded-2xl text-xs text-white font-semibold">
