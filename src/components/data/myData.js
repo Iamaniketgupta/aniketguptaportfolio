@@ -50,7 +50,7 @@ const myProjects = [
         github_link: "https://github.com/iamaniketgupta/profilize"
     },
     {
-        title: "Aniket Gupta Portfolio",
+        title: "MentorHub",
         img: mentorhub || project,
         desc: ["To connect Mentees and Mentors for 1:1 mentorship", "Made during a hackathon"],
         techStack: ["React.js", "Tailwind","NodeJs","Express"],
