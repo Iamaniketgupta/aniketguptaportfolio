@@ -52,7 +52,7 @@ const myProjects = [
     {
         title: "Aniket Gupta Portfolio",
         img: mentorhub || project,
-        desc: ["A Platform to connect Mentees and Mentors for 1:1 mentorship", "Made during a hackathon"],
+        desc: ["To connect Mentees and Mentors for 1:1 mentorship", "Made during a hackathon"],
         techStack: ["React.js", "Tailwind","NodeJs","Express"],
         live_link: "https://mentorhub.vercel.app",
         github_link: "https://github.com/Iamaniketgupta/mentorhub"

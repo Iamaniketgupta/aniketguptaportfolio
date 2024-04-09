@@ -209,10 +209,10 @@ const PortfolioPage = () => {
 
                             {
                                 myProjects?.map((item, index) =>
-                                    <div className="p-4 rounded-xl bg-gray-100 dark:bg-[#2a2e34] border-2 border-offset-2 border-blue-500 shadow-xl font-semibold  hover:shadow-2xl cursor-pointer" key={index}>
+                                    <div className="p-2 rounded-xl bg-gray-100 dark:bg-[#2a2e34] border-2 border-offset-2 border-blue-500 shadow-xl font-semibold  hover:shadow-2xl cursor-pointer" key={index}>
 
                                         <div className="border-3 overflow-clip bg-contain h-[200px] md:h-[260px] w-full rounded-xl ">
-                                            <img src={item.img} alt={item.title} className=" w-full h-full p-2 object-fill border-4 border-offset-2 border-blue-100 rounded-xl" />
+                                            <img src={item.img} alt={item.title} className=" w-full h-full object-fill  border-2 rounded-xl" />
                                         </div>
                                         <div>
                                             <div className="p-2 my-2 opacity-60 text-sm">
