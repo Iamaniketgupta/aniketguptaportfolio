@@ -3,8 +3,10 @@ import profilize from "../../assets/profilize.png";
 import gappe from "../../assets/gappe.png";
 import recordninja from "../../assets/recordninja.png";
 import react_anno from "../../assets/react_anno.png";
-// import portfolioProject from "../../assets/portfolioProject.png";
-import mentorhub from "../../assets/mentorhubimage.png";
+import iste from "../../assets/iste.jpeg";
+import hackathon from "../../assets/hackathon.png";
+import codingcomp from "../../assets/codingcomp.jpg";
+
 
 const personalDetails = [
     {
@@ -56,7 +58,7 @@ const myProjects = [
         title: "React Video Annotation NPM Package",
         img: react_anno|| project,
         desc: ["A react based NPM package. Provides a video player that supports video In-Frame annotations."],
-        techStack: ["React.js", "Javascript","KonvaJs"],
+        techStack: ["Babel","React.js", "Javascript","KonvaJs"],
         live_link: "https://react-video-annotation.vercel.app/",
         npm_link: "https://www.npmjs.com/package/react-video-annotation-tool",
         github_link: "https://github.com/iamaniketgupta/react-video-annotation"
@@ -75,7 +77,7 @@ const myProjects = [
         title: "Record Ninja",
         img: recordninja|| project,
         desc: ["A SAAS Screen Recording Web Application.","Implemented Resume template & Download as PDF"],
-        techStack: ["React.js", "Tailwind"],
+        techStack: ["Typescript","React.js", "Tailwind"],
         live_link: "https://profilize.netlify.app/",
         github_link: "https://github.com/iamaniketgupta/profilize"
     },
@@ -83,53 +85,20 @@ const myProjects = [
 
 ]
 
-const myGithubProjects =[
+const highlights =[
     {
-        title: "ShortHttp",
-        desc: ["A Scalable URL Shortener Application with Authentication and CRUD features"],
-        language:"JavaScript",
-        github_link: "https://github.com/iamaniketgupta/shorthttp",
-        stars:"1",
-        forks:"0"
-
+        title: "ISTE Award Ceremony",
+        link: iste
     },
     {
-        title: "Aniket Gupta Portfolio",
-        desc: ["Personal portfolio Centered around the theme of GitHub and its applications."],
-        language:"JavaScript",
-        github_link: "https://github.com/Iamaniketgupta/aniketguptaportfolio",
-        stars:"1",
-        forks:"0"
-
+        title: "Hackathon finalist",
+        link: hackathon
     },
     {
-        title: "Code Hawks",
-        desc: ["Hackathon project with Authentication and Map with locations of users"],
-        language:"JavaScript",
-        github_link: "https://github.com/iamaniketgupta/CodeHawks",
-        stars:"3",
-        forks:"1"
-
-    },
-    {
-        title: "Weather App",
-        desc: ["A Secured weather Forecast Application indicators"],
-        language:"EJS",
-        github_link: "https://github.com/iamaniketgupta/RealWeatherApp",
-        stars:"3",
-        forks:"0"
-
-    },
-  
-    {
-        title: "Expense Tracker",
-        desc: ["Expense tracker app with Multiple functionalities & CRUD features"],
-        language:"JavaScript",
-        github_link: "https://github.com/Iamaniketgupta/Track-Expense",
-        stars:"1",
-        forks:"0"
-
-    },
+        title: "Coding Competition ",
+        link: codingcomp
+    }
+ 
 ]
 
 const mySkills = ["C","C++","Javascript", "OOPS","Data Structures","Typescript","React.js", "Postman" ,"Node.js", "Express.js", "MongoDB", "CSS", "Tailwind", "HTML", "Git", "Docker"]
@@ -137,7 +106,7 @@ const mySkills = ["C","C++","Javascript", "OOPS","Data Structures","Typescript",
 
 
 export {
-    myGithubProjects,
+    highlights,
     myProjects,
     mySkills,
     personalDetails

@@ -16,7 +16,7 @@ const WorkExperience = () => {
 
     return (
         <div className="bg-white dark:bg-black shadow-lg rounded-lg py-8 px-4 border-t-2 border-violet-600">
-            <h2 className="text-xl px-4 font-semibold opacity-80">WORK EXPERIENCE</h2>
+            <h2 className="text-xl px-4 font-semibold opacity-95">WORK EXPERIENCE</h2>
             <div className="mt-3 mx-auto py-3 px-2">
 
                 <ol className="border-l-2 border-stone-600 pl-3 relative">
@@ -38,7 +38,7 @@ const WorkExperience = () => {
                             {/* Description List */}
                             <ul className="list-disc pl-6 mt-2 space-y-1">
                                 {experience.description.map((desc, idx) => (
-                                    <li key={idx} className="text-xs text-gray-600 dark:text-gray-300">{desc}</li>
+                                    <li key={idx} className="text-xs md:text-sm font-normal text-gray-600 dark:text-gray-300">{desc}</li>
                                 ))}
                             </ul>
                         </li>
