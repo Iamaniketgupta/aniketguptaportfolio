@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://aniketgupta.vercel.app/sitemap.xml
