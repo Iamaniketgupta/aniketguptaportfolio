@@ -278,8 +278,8 @@ const PortfolioPage = () => {
                                                         <span
                                                             key={idx}
                                                             className={`px-3 py-1 bg-violet-700 text-white text-xs font-medium rounded-full shadow-md
-                                                                ${tech === "React.js" ? "bg-blue-800" : tech === "NodeJs" ? "bg-green-800" : tech === "Tailwind" ? "bg-slate-600" :
-                                                                    tech === "Typescript" ? "bg-blue-500" : tech === "MongoDB" ? "bg-green-600" : tech === "Express" ? "bg-orange-800" :
+                                                                ${tech === "React.js"? "bg-blue-800" : tech === "NodeJs" ? "bg-green-800": tech === "Tailwind" ? "bg-slate-600" :
+                                                                    tech === "Typescript" ? "bg-blue-500" : tech === "MongoDB" ? "bg-green-600" :tech === "Express" ? "bg-orange-800" :
                                                                         tech === "Javascript" ? "bg-yellow-600" : "bg-violet-600"}`}
                                                         >
                                                             {tech}
