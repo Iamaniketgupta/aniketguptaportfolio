@@ -37,7 +37,7 @@ const PortfolioPage = () => {
     };
 
     return (
-        <div className=" min-h-[100vh]  bg-slate-200 text-black dark:bg-black  duration-500 dark:text-white py-5 p-2 md:p-5 font-sans">
+        <div className=" min-h-[100vh] max-w-[2000px] mx-auto bg-slate-200 text-black dark:bg-black  duration-500 dark:text-white py-5 p-2 md:p-5 font-sans">
             <div className="main-wrapper grid grid-cols-1  place-items-start md:grid-cols-2 lg:grid-cols-3 md:gap-5 max-md:place-items-center ">
                 <div className="personal-details grid grid-cols-1 gap-4 ">
                     {/* Theme */}
