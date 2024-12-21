@@ -78,8 +78,8 @@ const myProjects = [
         img: recordninja|| project,
         desc: ["A SAAS Screen Recording Web Application.","Implemented Resume template & Download as PDF"],
         techStack: ["Typescript","React.js", "Tailwind"],
-        live_link: "https://profilize.netlify.app/",
-        github_link: "https://github.com/iamaniketgupta/profilize"
+        live_link: "https://recordninja.vercel.app/",
+        github_link: "https://github.com/iamaniketgupta/recordninja"
     },
 
 
