@@ -13,6 +13,12 @@ const personalDetails = [
         title: 'Based in:',
         answer: "India"
     },
+        {
+        title: "Leetcode:",
+        answer: "aniketgupta_",
+        link:"https://leetcode.com/aniketgupta_"
+
+    },
     {
         title: "Github:",
         answer: "iamaniketgupta",
@@ -36,14 +42,9 @@ const personalDetails = [
         answer: "iamaniketgupta",
         link:"https://instagram.com/iamaniketgupta"
 
-    },
+    }
 
-    {
-        title: "Leetcode:",
-        answer: "aniketgupta_",
-        link:"https://leetcode.com/aniketgupta_"
 
-    },
 ]
 const myProjects = [
     {
