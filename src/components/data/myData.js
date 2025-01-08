@@ -77,7 +77,7 @@ const myProjects = [
     {
         title: "Record Ninja",
         img: recordninja|| project,
-        desc: ["A SAAS Screen Recording Web Application.","Implemented Resume template & Download as PDF"],
+        desc: ["A SAAS Screen Recording Web Application.","Record and Download high quality video."],
         techStack: ["Typescript","Next.js","React.js", "Tailwind"],
         live_link: "https://recordninja.vercel.app/",
         github_link: "https://github.com/iamaniketgupta/recordninja"
